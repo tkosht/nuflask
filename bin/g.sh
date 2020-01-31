@@ -13,5 +13,5 @@ git pull origin master
 
 # git add .
 # git commit -m 'init: initial commit'
-# git push
+# git push --set-upstream origin master
 

@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  nuflask:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        - PYTHONPATH=${PYTHONPATH}
+    ports:
+      - "1080:80"
+    image: nuflask:ml
+    container_name: nuflask
+    volumes:
+      - ./app:/app
+    environment:
+      - TZ="Asia/Tokyo"
